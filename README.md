@@ -1,1 +1,3 @@
-# fighting-read-dubbo3
+# 大黄鸭的 Dubbo3.0.0 源码阅读之旅
+# 和大黄鸭一起学源码，go，go，go
+# 公众号：老吕架构
