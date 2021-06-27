@@ -43,7 +43,7 @@ import static org.apache.dubbo.config.spring.util.DubboBeanUtils.registerCommonB
 
 /**
  * DubboNamespaceHandler
- *
+ * dubbo xml文件解析入口
  * @export
  */
 public class DubboNamespaceHandler extends NamespaceHandlerSupport implements ConfigurableSourceBeanMetadataElement {
@@ -54,6 +54,7 @@ public class DubboNamespaceHandler extends NamespaceHandlerSupport implements Co
 
     @Override
     public void init() {
+        //注册 标签名称 以及对应的 解析器
         registerBeanDefinitionParser("application", new DubboBeanDefinitionParser(ApplicationConfig.class));
         registerBeanDefinitionParser("module", new DubboBeanDefinitionParser(ModuleConfig.class));
         registerBeanDefinitionParser("registry", new DubboBeanDefinitionParser(RegistryConfig.class));
